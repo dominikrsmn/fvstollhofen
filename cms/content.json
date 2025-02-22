@@ -83,5 +83,71 @@
     {
       "name": "Freizeitcenter Oberrhein"
     }
+  ],
+  "vorstand": [
+    {
+      "name": "Normal Schlageter",
+      "funktion": "Clubhauswart"
+    },
+    {
+      "name": "Julian Lörch",
+      "funktion": "1. Spielausschuss"
+    },
+    {
+      "name": "Christian Köppel",
+      "funktion": "2. Spielausschuss"
+    },
+    {
+      "name": "Siegfried Frietsch",
+      "funktion": "1. Kassierer"
+    },
+    {
+      "name": "Martin Burkart",
+      "funktion": "1. Vorstand"
+    },
+    {
+      "name": "Kurt Götz",
+      "funktion": "Beisitzer"
+    },
+    {
+      "name": "Michael Gerber",
+      "funktion": "Beisitzer"
+    },
+    {
+      "name": "Daniel Stolz",
+      "funktion": "Beisitzer"
+    },
+    {
+      "name": "Frank Ganteführ",
+      "funktion": "Jugendleiter"
+    },
+    {
+      "name": "Verena Köppel",
+      "funktion": "2. Kassierer"
+    },
+    {
+      "name": "Jessica Moll",
+      "funktion": "Schriftführer"
+    },
+    {
+      "name": "Talisha Sutter",
+      "funktion": "Beisitzer"
+    },
+    {
+      "name": "Franz Götz",
+      "funktion": "AH Vorstand"
+    },
+    {
+      "name": "Simon Heberling",
+      "funktion": "2. Vorstand"
+    },
+    {
+      "name": "Mike Lorenz",
+      "funktion": "Beisitzer"
+    },
+    {
+      "name": "Sascha Götz",
+      "funktion": "Beisitzer"
+    }
   ]
 }
