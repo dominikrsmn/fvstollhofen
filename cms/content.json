@@ -1,1 +1,57 @@
-{}
+{
+  "mannschaftstypen": {
+    "mannschaft": [
+      {
+        "name": "2. Herrenmannschaft",
+        "liga": "Kreisliga C",
+        "zusatz": "Staffel 3"
+      },
+      {
+        "name": "1. Herrenmannschaft",
+        "liga": "Kreisliga B",
+        "zusatz": "Staffel 2"
+      }
+    ],
+    "verantwortlich": [
+      {
+        "name": "Manuel Braun",
+        "funktion": "Spielausschuss"
+      },
+      {
+        "name": "Matthias Ernst",
+        "funktion": "Spielausschuss"
+      },
+      {
+        "name": "Christian Bernhard",
+        "funktion": "Spielausschuss"
+      },
+      {
+        "name": "Christian Köppel",
+        "funktion": "Spielausschuss"
+      },
+      {
+        "name": "Simon Heberling",
+        "funktion": "Trainer"
+      },
+      {
+        "name": "Manuel Braun",
+        "funktion": "Trainer"
+      }
+    ],
+    "ort": [
+      {
+        "name": "Söllingen"
+      },
+      {
+        "name": "Stollhofen"
+      }
+    ],
+    "termine": {
+      "tage": "Mittwoch & Freitag",
+      "uhrzeit": "19:00 - 20:30 Uhr"
+    }
+  },
+  "aktuelles": [
+    {}
+  ]
+}
