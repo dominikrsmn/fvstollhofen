@@ -2,21 +2,19 @@
   ":name": "FV Stollhofen Homepage",
   ":description": "Hier kann der Inhalt für die Seite des FV 1920 Stollhofen e.V. verwaltet werden.",
   "mannschaftstypen": {
-    ":items": {
-      "mannschaft": {
-        ":items": {
-          "name": {
-            ":type": "line"
-          },
-          "gruppenbild": {
-            ":type": "image"
-          },
-          "liga": {
-            ":type": "line"
-          },
-          "zusatz": {
-            ":type": "line"
-          }
+    "mannschaft": {
+      ":items": {
+        "name": {
+          ":type": "line"
+        },
+        "gruppenbild": {
+          ":type": "image"
+        },
+        "liga": {
+          ":type": "line"
+        },
+        "zusatz": {
+          ":type": "line"
         }
       }
     },
