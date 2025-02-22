@@ -3,20 +3,60 @@
   ":description": "Hier kann der Inhalt für die Seite des FV 1920 Stollhofen e.V. verwaltet werden.",
   "mannschaftstypen": {
     ":items": {
+      "mannschaft": {
+        ":items": {
+          "name": {
+            ":type": "line"
+          },
+          "gruppenbild": {
+            ":type": "image"
+          },
+          "liga": {
+            ":type": "line"
+          },
+          "zusatz": {
+            ":type": "line"
+          }
+        }
+      }
+    },
+    "verantwortlich": {
       ":items": {
         "name": {
           ":type": "line"
         },
-        "gruppenbild": {
+        "funktion": {
+          ":type": "line"
+        },
+        "bild": {
           ":type": "image"
-        },
-        "liga": {
-          ":type": "line"
-        },
-        "zusatz": {
-          ":type": "line"
         }
       }
+    },
+    "ort": {
+      ":items": {
+        "name": {
+          ":type": "line"
+        },
+        "bild": {
+          ":type": "image"
+        }
+      },
+      "bemerkung": {
+        ":type": "line"
+      }
+    },
+    "termine": {
+      "tage": {
+        ":type": "line"
+      },
+      "uhrzeit": {
+        ":type": "line"
+      }
+    },
+    "bemerkung": {
+      ":type": "line",
+      "richtext": true
     }
   },
   "aktuelles": {
@@ -24,7 +64,7 @@
       "titel": {
         ":type": "line"
       },
-      "Inhalt": {
+      "inhalt": {
         ":type": "text",
         ":richtext": true
       },
@@ -40,6 +80,44 @@
       },
       "logo": {
         ":type": "image"
+      }
+    }
+  },
+  "vorstand": {
+    ":items": {
+      "name": {
+        ":type": "line"
+      },
+      "funktion": {
+        ":type": "line"
+      },
+      "bild": {
+        ":type": "image"
+      }
+    }
+  },
+  "chronik": {
+    ":items": {
+      "datum": {
+        ":type": "line"
+      },
+      "inhalt": {
+        ":type": "text",
+        ":richtext": true
+      },
+      "bild": {
+        ":type": "image"
+      }
+    }
+  },
+  "vereinssatzung": {
+    ":items": {
+      "paragraf": {
+        ":type": "line"
+      },
+      "inhalt": {
+        ":type": "text",
+        ":richtext": true
       }
     }
   }
