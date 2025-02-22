@@ -150,7 +150,6 @@
       "funktion": "Beisitzer"
     }
   ],
-
   "chronik": [
     {
       "datum": "25. November 1920",
@@ -215,6 +214,12 @@
     {
       "datum": "1995",
       "inhalt": "<h1>Sanierung des Clubhauses</h1><p>Im März 1995 wurden die <strong>Sanierungsarbeiten</strong> am inzwischen 25 Jahre alten Clubhaus abgeschlossen.</p>"
+    }
+  ],
+  "vereinssatzung": [
+    {
+      "paragraf": "1",
+      "inhalt": "<p>inhalt</p>"
     }
   ]
 }
