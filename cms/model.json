@@ -110,7 +110,7 @@
   },
   "vereinssatzung": {
     ":items": {
-      "paragraf": {
+      "punkt": {
         ":type": "line"
       },
       "inhalt": {
