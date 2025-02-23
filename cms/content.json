@@ -434,5 +434,26 @@
         ]
       }
     ]
-  }
+  },
+  "freizeitsportstypen": [
+    {
+      "kategorie": "volleyball",
+      "name": "Volleyball Mannschaft",
+      "verantwortlich": [
+        {
+          "name": "Phineas",
+          "funktion": "Ferb"
+        }
+      ],
+      "ort": [
+        {
+          "name": "Stollhofen"
+        }
+      ],
+      "termine": {
+        "tage": "Tag und Nacht",
+        "uhrzeit": "immer"
+      }
+    }
+  ]
 }
