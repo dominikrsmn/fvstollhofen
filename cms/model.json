@@ -96,12 +96,68 @@
       },
       "bemerkung": {
         ":type": "line",
-        "richtext": true
+        ":richtext": true
+      }
+    }
+  },
+  "freizeitsportstypen": {
+    ":items": {
+      "kategorie": {
+        ":type": "line"
+      },
+
+      "name": {
+        ":type": "line"
+      },
+      "gruppenbild": {
+        ":type": "image"
+      },
+
+      "verantwortlich": {
+        ":items": {
+          "name": {
+            ":type": "line"
+          },
+          "funktion": {
+            ":type": "line"
+          },
+          "bild": {
+            ":type": "image"
+          }
+        }
+      },
+      "ort": {
+        ":items": {
+          "name": {
+            ":type": "line"
+          },
+          "bild": {
+            ":type": "image"
+          }
+        },
+        "bemerkung": {
+          ":type": "line"
+        }
+      },
+      "termine": {
+        "tage": {
+          ":type": "line"
+        },
+        "uhrzeit": {
+          ":type": "line"
+        }
+      },
+      "bemerkung": {
+        ":type": "line",
+        ":richtext": true
       }
     }
   },
   "aktuelles": {
     ":items": {
+      "id": {
+        ":type": "line"
+      },
       "titel": {
         ":type": "line"
       },
