@@ -40,62 +40,64 @@
     }
   },
   "mannschaftstypen": {
-    "kategorie": {
-      "type": "line"
-    },
-    "mannschaft": {
-      ":items": {
-        "name": {
-          ":type": "line"
+    ":items": {
+      "kategorie": {
+        ":type": "line"
+      },
+      "mannschaft": {
+        ":items": {
+          "name": {
+            ":type": "line"
+          },
+          "gruppenbild": {
+            ":type": "image"
+          },
+          "liga": {
+            ":type": "line"
+          },
+          "zusatz": {
+            ":type": "line"
+          }
+        }
+      },
+      "verantwortlich": {
+        ":items": {
+          "name": {
+            ":type": "line"
+          },
+          "funktion": {
+            ":type": "line"
+          },
+          "bild": {
+            ":type": "image"
+          }
+        }
+      },
+      "ort": {
+        ":items": {
+          "name": {
+            ":type": "line"
+          },
+          "bild": {
+            ":type": "image"
+          }
         },
-        "gruppenbild": {
-          ":type": "image"
-        },
-        "liga": {
-          ":type": "line"
-        },
-        "zusatz": {
+        "bemerkung": {
           ":type": "line"
         }
-      }
-    },
-    "verantwortlich": {
-      ":items": {
-        "name": {
+      },
+      "termine": {
+        "tage": {
           ":type": "line"
         },
-        "funktion": {
+        "uhrzeit": {
           ":type": "line"
-        },
-        "bild": {
-          ":type": "image"
-        }
-      }
-    },
-    "ort": {
-      ":items": {
-        "name": {
-          ":type": "line"
-        },
-        "bild": {
-          ":type": "image"
         }
       },
       "bemerkung": {
-        ":type": "line"
+        ":type": "line",
+        "richtext": true
       }
-    },
-    "termine": {
-      "tage": {
-        ":type": "line"
-      },
-      "uhrzeit": {
-        ":type": "line"
-      }
-    },
-    "bemerkung": {
-      ":type": "line",
-      "richtext": true
     }
   },
   "aktuelles": {
