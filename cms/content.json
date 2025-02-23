@@ -1,6 +1,30 @@
 {
   "mannschaftstypen": [
     {
+      "kategorie": "damen",
+      "mannschaft": [
+        {
+          "name": "Damenmannschaft",
+          "liga": "Bezirksliga"
+        }
+      ],
+      "verantwortlich": [
+        {
+          "name": "Dr. Doofenschmirtz",
+          "funktion": "Bösewicht"
+        }
+      ],
+      "ort": [
+        {
+          "name": "Stollhofen"
+        }
+      ],
+      "termine": {
+        "tage": "Tage & Tage",
+        "uhrzeit": "24:00"
+      }
+    },
+    {
       "kategorie": "herren",
       "mannschaft": [
         {
