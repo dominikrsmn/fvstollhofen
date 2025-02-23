@@ -40,6 +40,9 @@
     }
   },
   "mannschaftstypen": {
+    "kategorie": {
+      "type": "line"
+    },
     "mannschaft": {
       ":items": {
         "name": {
