@@ -1,56 +1,72 @@
 {
-  "mannschaftstypen": {
-    "mannschaft": [
-      {
-        "name": "2. Herrenmannschaft",
-        "liga": "Kreisliga C",
-        "zusatz": "Staffel 3"
-      },
-      {
-        "name": "1. Herrenmannschaft",
-        "liga": "Kreisliga B",
-        "zusatz": "Staffel 2"
+  "mannschaftstypen": [
+    {
+      "kategorie": "herren",
+      "mannschaft": [
+        {
+          "name": "2. Herrenmannschaft",
+          "liga": "1. Bundesliga",
+          "zusatz": "1. Platz"
+        },
+        {
+          "name": "1. Herrenmannschaft",
+          "liga": "Kreisliga B",
+          "zusatz": "Staffel 240"
+        }
+      ],
+      "verantwortlich": [
+        {
+          "name": "Jogi Löw",
+          "funktion": "Trainer"
+        }
+      ],
+      "ort": [
+        {
+          "name": "Söllingen"
+        },
+        {
+          "name": "Stollhofen"
+        }
+      ],
+      "termine": {
+        "tage": "Mittwoch & Freitag",
+        "uhrzeit": "19:00 - 20:30 Uhr"
       }
-    ],
-    "verantwortlich": [
-      {
-        "name": "Manuel Braun",
-        "funktion": "Spielausschuss"
-      },
-      {
-        "name": "Matthias Ernst",
-        "funktion": "Spielausschuss"
-      },
-      {
-        "name": "Christian Bernhard",
-        "funktion": "Spielausschuss"
-      },
-      {
-        "name": "Christian Köppel",
-        "funktion": "Spielausschuss"
-      },
-      {
-        "name": "Simon Heberling",
-        "funktion": "Trainer"
-      },
-      {
-        "name": "Manuel Braun",
-        "funktion": "Trainer"
+    },
+    {
+      "kategorie": "herren",
+      "mannschaft": [
+        {
+          "name": "2. Herrenmannschaft",
+          "liga": "1. Bundesliga",
+          "zusatz": "1. Platz"
+        },
+        {
+          "name": "1. Herrenmannschaft",
+          "liga": "Kreisliga B",
+          "zusatz": "Staffel 240"
+        }
+      ],
+      "verantwortlich": [
+        {
+          "name": "Jogi Löw",
+          "funktion": "Trainer"
+        }
+      ],
+      "ort": [
+        {
+          "name": "Söllingen"
+        },
+        {
+          "name": "Stollhofen"
+        }
+      ],
+      "termine": {
+        "tage": "Mittwoch & Freitag",
+        "uhrzeit": "19:00 - 20:30 Uhr"
       }
-    ],
-    "ort": [
-      {
-        "name": "Söllingen"
-      },
-      {
-        "name": "Stollhofen"
-      }
-    ],
-    "termine": {
-      "tage": "Mittwoch & Freitag",
-      "uhrzeit": "19:00 - 20:30 Uhr"
     }
-  },
+  ],
   "aktuelles": [
     {
       "titel": "Neues Vereinsshirt FV 1920 Stollhofen",
