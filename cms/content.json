@@ -285,5 +285,114 @@
       "punkt": "§16",
       "inhalt": "<p>Zur Erfüllung der Zwecke des Vereins werden unter Beachtung der gesetzlichen Vorgaben des Bundesdatenschutzgesetzes (BDSG) personenbezogene Daten gespeichert, übermittelt und verändert...</p>"
     }
-  ]
+  ],
+  "navigation": {
+    "kategorie": [
+      {
+        "titel": "Verein",
+        "links": [
+          {
+            "titel": "Mitgliedschaft",
+            "url": "/verein/mitgliedschaft"
+          },
+          {
+            "titel": "Clubhaus Mieten",
+            "url": "/verein/clubhaus"
+          },
+          {
+            "titel": "Vorstandschaft",
+            "url": "/verein/vorstandschaft"
+          },
+          {
+            "titel": "Chronik",
+            "url": "/verein/chronik"
+          },
+          {
+            "titel": "Vereinssatzung",
+            "url": "/verein/vereinssatzung"
+          }
+        ]
+      },
+      {
+        "titel": "Mannschaften",
+        "links": [
+          {
+            "titel": "Herren",
+            "url": "/mannschaft/herren"
+          },
+          {
+            "titel": "Damen",
+            "url": "/mannschaft/damen"
+          },
+          {
+            "titel": "Alte Herren",
+            "url": "/mannschaft/alte-herren"
+          },
+          {
+            "titel": "Junioren",
+            "url": "https://jfv-rheinmuenster-ulm.de/"
+          }
+        ]
+      },
+      {
+        "titel": "Freizeitsport",
+        "links": [
+          {
+            "titel": "Volleyball",
+            "url": "/freizeitsport/volleyball"
+          },
+          {
+            "titel": "Pilates",
+            "url": "/freizeitsport/pilates"
+          },
+          {
+            "titel": "Bauch-Beine-Po",
+            "url": "/freizeitsport/bauch-beine-po"
+          },
+          {
+            "titel": "Sport, Spiel, Spaß für Kinder",
+            "url": "/freizeitsport/kinder"
+          },
+          {
+            "titel": "Frauenturnen",
+            "url": "/freizeitsport/frauenturnen"
+          }
+        ]
+      },
+      {
+        "titel": "Partner",
+        "links": [
+          {
+            "titel": "Unsere Partner",
+            "url": "/partner"
+          },
+          {
+            "titel": "Partner werden",
+            "url": "/partner/partner-werden"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "kategorie": [
+      {
+        "titel": "Verein",
+        "links": [
+          {
+            "titel": "DFB Profil",
+            "url": "https://www.fussball.de/verein/fv-stollhofen-suedbaden/-/id/00ES8GN9F0000057VV0AG08LVUPGND5I#!/"
+          },
+          {
+            "titel": "Datenschutz",
+            "url": "/datenschutz"
+          },
+          {
+            "titel": "Impressum",
+            "url": "/impressum"
+          }
+        ]
+      }
+    ]
+  }
 }
