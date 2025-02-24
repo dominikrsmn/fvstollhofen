@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { Card } from "@/components/ui/card";
-import { PersonCard } from "@/components/PersonCard";
 import content from "@/cms/content.json";
 import { notFound } from "next/navigation";
 
@@ -34,16 +32,16 @@ interface TeamTypes {
   bemerkung?: string;
 }
 
-interface Props {
-  params: {
-    kategorie: string;
-  };
-}
-
-function MannschaftPage({ params }: Props) {
+async function MannschaftPage({
+  params,
+}: {
+  params: Promise<{ kategorie: string }>;
+}) {
   // Get the team data
+  const kategorie = (await params).kategorie;
+
   const teamData = content.mannschaftstypen.find(
-    (typ) => typ.kategorie === params.kategorie
+    (typ) => typ.kategorie === kategorie
   ) as TeamTypes;
 
   if (!teamData) {
@@ -54,7 +52,7 @@ function MannschaftPage({ params }: Props) {
     <main className="max-w-[1200px] mx-auto px-4 py-8 my-24">
       {/* Team Images Section */}
       <div className="flex flex-col md:flex-row gap-8 mb-12">
-        {teamData.mannschaft.map((team: TeamData, index: number) => (
+        {teamData.mannschaft.map((team: TeamData) => (
           <div key={team.name} className="space-y-2 w-full h-full">
             <h2 className="text-2xl font-bold">{team.name}</h2>
             <div className="relative aspect-video bg-muted rounded-lg ">

@@ -68,7 +68,7 @@ async function fetchGamesForTeam(teamId: string): Promise<Game[]> {
 
       let homeScore: number | null = null;
       let awayScore: number | null = null;
-      let gameStatus = $row.find(".column-score .info-text").text().trim();
+      const gameStatus = $row.find(".column-score .info-text").text().trim();
 
       if (!gameStatus) {
         const $scoreElement = $row.find(".column-score a");

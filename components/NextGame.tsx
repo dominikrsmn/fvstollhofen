@@ -2,21 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-type NextGameProps = {
-  date: string;
-  time: string;
-  homeTeam: {
-    name: string;
-    logo: string;
-  };
-  awayTeam: {
-    name: string;
-    logo: string;
-  };
-  className?: string;
-};
-
-function NextGame({ className }: NextGameProps) {
+function NextGame() {
   // Mock data - replace with real data later
   const game = {
     date: "Sonntag 03.03",

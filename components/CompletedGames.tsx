@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import TeamFilter from "@/components/completed-games/TeamFilter";
 import GamesList from "@/components/completed-games/GamesList";
 import { Team, Game, ApiResponse } from "@/types/api";
@@ -18,6 +18,7 @@ const teams: Team[] = [
 ];
 
 const SUPPORTED_TEAMS = ["Herren 1", "Herren 2", "Damen"] as const;
+type SupportedTeam = (typeof SUPPORTED_TEAMS)[number];
 
 function formatTime(dateStr: string): string {
   return new Date(dateStr).toLocaleTimeString("de-DE", {
@@ -33,10 +34,10 @@ export default function CompletedGames() {
   const [error, setError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
 
-  const fetchGames = async () => {
+  const fetchGames = useCallback(async () => {
     const startTime = Date.now();
 
-    if (!SUPPORTED_TEAMS.includes(activeTeam as any)) {
+    if (!SUPPORTED_TEAMS.includes(activeTeam as SupportedTeam)) {
       setGames([]); // Clear games for unsupported teams
       setError("Noch keine Spiele verfügbar für dieses Team");
       return;
@@ -66,11 +67,11 @@ export default function CompletedGames() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [activeTeam]);
 
   useEffect(() => {
     fetchGames();
-  }, [activeTeam]);
+  }, [activeTeam, fetchGames]);
 
   return (
     <ErrorBoundary>

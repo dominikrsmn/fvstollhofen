@@ -24,7 +24,7 @@ export default function PartnerPage() {
             <span className="text-lg font-medium">Sponsor werden</span>
           </div>
         </Link>
-        {(content.sponsoren as Sponsor[]).map((sponsor, index) => (
+        {(content.sponsoren as Sponsor[]).map((sponsor) => (
           <div
             key={sponsor.name}
             className="relative bg-white border border-border rounded-md overflow-hidden group"

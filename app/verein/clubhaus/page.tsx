@@ -9,7 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { DateRangePicker } from "@/components/date-range-picker";
-import { Utensils, Music, Tv, Wifi, Target, Armchair } from "lucide-react";
+import { Target, Armchair } from "lucide-react";
 import { ImageCarousel } from "@/components/image-carousel";
 import Image from "next/image";
 

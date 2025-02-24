@@ -1,13 +1,6 @@
 import Image from "next/image";
-import { Card } from "@/components/ui/card";
-import { PersonCard } from "@/components/PersonCard";
 import content from "@/cms/content.json";
 import { notFound } from "next/navigation";
-
-interface TeamData {
-  name: string;
-  gruppenbild?: string;
-}
 
 interface TeamMember {
   name: string;
@@ -33,16 +26,16 @@ interface TeamTypes {
   bemerkung?: string;
 }
 
-interface Props {
-  params: {
-    kategorie: string;
-  };
-}
-
-function FreizeitsportPage({ params }: Props) {
+async function FreizeitsportPage({
+  params,
+}: {
+  params: Promise<{ kategorie: string }>;
+}) {
   // Get the team data
+  const kategorie = (await params).kategorie;
+
   const teamData = content.freizeitsportstypen.find(
-    (typ) => typ.kategorie === params.kategorie
+    (typ) => typ.kategorie === kategorie
   ) as TeamTypes;
 
   if (!teamData) {
