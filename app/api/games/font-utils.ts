@@ -1,12 +1,22 @@
-import path from "path";
-import { promises as fsPromises } from "fs";
 import * as opentype from "opentype.js";
 
-// Cache for font data to avoid repeated downloads
+// Cache for font data and binary content
 const fontCache = new Map<
   string,
-  { cmap: Map<string, number>; timestamp: number }
+  {
+    cmap: Map<string, number>;
+    timestamp: number;
+  }
 >();
+
+const fontBinaryCache = new Map<
+  string,
+  {
+    buffer: ArrayBuffer;
+    timestamp: number;
+  }
+>();
+
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
 // Number mappings from the Python script
@@ -24,29 +34,11 @@ const numberMappings = {
   hyphen: -1,
 };
 
-async function ensureFontDir() {
-  const fontDir = path.join(process.cwd(), "fonts");
-  try {
-    await fsPromises.access(fontDir);
-  } catch {
-    await fsPromises.mkdir(fontDir, { recursive: true });
-  }
-  return fontDir;
-}
-
-async function downloadFont(obfuscationId: string): Promise<string> {
-  const fontDir = await ensureFontDir();
-  const fontPath = path.join(fontDir, `${obfuscationId}.ttf`);
-
-  try {
-    // Check if font file exists and is recent
-    const stats = await fsPromises.stat(fontPath);
-    const age = Date.now() - stats.mtimeMs;
-    if (age < CACHE_DURATION) {
-      return fontPath;
-    }
-  } catch {
-    // File doesn't exist or other error, continue to download
+async function downloadFont(obfuscationId: string): Promise<ArrayBuffer> {
+  // Check binary cache first
+  const cached = fontBinaryCache.get(obfuscationId);
+  if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+    return cached.buffer;
   }
 
   const url = `https://www.fussball.de/export.fontface/-/format/ttf/id/${obfuscationId}/type/font`;
@@ -56,12 +48,20 @@ async function downloadFont(obfuscationId: string): Promise<string> {
   }
 
   const buffer = await response.arrayBuffer();
-  await fsPromises.writeFile(fontPath, Buffer.from(buffer));
-  return fontPath;
+
+  // Update binary cache
+  fontBinaryCache.set(obfuscationId, {
+    buffer,
+    timestamp: Date.now(),
+  });
+
+  return buffer;
 }
 
-async function parseFontFile(fontPath: string): Promise<Map<string, number>> {
-  const font = await opentype.load(fontPath);
+async function parseFontBuffer(
+  buffer: ArrayBuffer
+): Promise<Map<string, number>> {
+  const font = await opentype.parse(buffer);
   const cmap = new Map<string, number>();
 
   // Get the cmap table
@@ -88,16 +88,17 @@ export async function deobfuscateScore(
   scoreText: string
 ): Promise<number | null> {
   try {
-    // Check cache first
+    // Check mapping cache first
     const cached = fontCache.get(obfuscationId);
     if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
       return parseScoreWithMap(scoreText, cached.cmap);
     }
 
-    const fontPath = await downloadFont(obfuscationId);
-    const cmap = await parseFontFile(fontPath);
+    // Download and parse font
+    const buffer = await downloadFont(obfuscationId);
+    const cmap = await parseFontBuffer(buffer);
 
-    // Update cache
+    // Update mapping cache
     fontCache.set(obfuscationId, {
       cmap,
       timestamp: Date.now(),
