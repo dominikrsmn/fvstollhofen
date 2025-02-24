@@ -28,28 +28,50 @@
       "kategorie": "herren",
       "mannschaft": [
         {
-          "name": "2. Herrenmannschaft",
-          "liga": "1. Bundesliga",
-          "zusatz": "1. Platz"
-        },
-        {
           "name": "1. Herrenmannschaft",
           "liga": "Kreisliga B",
-          "zusatz": "Staffel 240"
+          "zusatz": "Staffel 2"
+        },
+        {
+          "name": "2. Herrenmannschaft",
+          "liga": "Kreisliga C",
+          "zusatz": "Staffel 3"
         }
       ],
       "verantwortlich": [
         {
-          "name": "Jogi Löw",
+          "name": "Andreas Kraft",
           "funktion": "Trainer"
+        },
+        {
+          "name": "Roman Toom",
+          "funktion": "Trainer"
+        },
+        {
+          "name": "Christian Köppel",
+          "funktion": "Spielausschuss"
+        },
+        {
+          "name": "Christian Bernhard",
+          "funktion": "Spielausschuss"
+        },
+        {
+          "name": "Matthias Ernst",
+          "funktion": "Spielausschuss"
+        },
+        {
+          "name": "Manuel Braun",
+          "funktion": "Spielausschuss"
         }
       ],
       "ort": [
         {
-          "name": "Söllingen"
+          "name": "Söllingen",
+          "bild": "/söllingen.jpg"
         },
         {
-          "name": "Stollhofen"
+          "name": "Stollhofen",
+          "bild": "/stollhofen.jpg"
         }
       ],
       "termine": {
@@ -126,24 +148,12 @@
   ],
   "vorstand": [
     {
-      "name": "Normal Schlageter",
-      "funktion": "Clubhauswart"
+      "name": "Mike Lorenz",
+      "funktion": "Beisitzer"
     },
     {
-      "name": "Julian Lörch",
-      "funktion": "1. Spielausschuss"
-    },
-    {
-      "name": "Christian Köppel",
-      "funktion": "2. Spielausschuss"
-    },
-    {
-      "name": "Siegfried Frietsch",
-      "funktion": "1. Kassierer"
-    },
-    {
-      "name": "Martin Burkart",
-      "funktion": "1. Vorstand"
+      "name": "Sascha Götz",
+      "funktion": "Beisitzer"
     },
     {
       "name": "Kurt Götz",
@@ -158,36 +168,48 @@
       "funktion": "Beisitzer"
     },
     {
-      "name": "Frank Ganteführ",
-      "funktion": "Jugendleiter"
-    },
-    {
-      "name": "Verena Köppel",
-      "funktion": "2. Kassierer"
-    },
-    {
-      "name": "Jessica Moll",
-      "funktion": "Schriftführer"
-    },
-    {
       "name": "Talisha Sutter",
       "funktion": "Beisitzer"
     },
     {
-      "name": "Franz Götz",
-      "funktion": "AH Vorstand"
+      "name": "Martin Burkart",
+      "funktion": "1. Vorstand"
     },
     {
       "name": "Simon Heberling",
       "funktion": "2. Vorstand"
     },
     {
-      "name": "Mike Lorenz",
-      "funktion": "Beisitzer"
+      "name": "Franz Götz",
+      "funktion": "AH Vorstand"
     },
     {
-      "name": "Sascha Götz",
-      "funktion": "Beisitzer"
+      "name": "Julian Lörch",
+      "funktion": "1. Spielausschuss"
+    },
+    {
+      "name": "Christian Köppel",
+      "funktion": "2. Spielausschuss"
+    },
+    {
+      "name": "Siegfried Frietsch",
+      "funktion": "1. Kassierer"
+    },
+    {
+      "name": "Verena Köppel",
+      "funktion": "2. Kassierer"
+    },
+    {
+      "name": "Frank Ganteführ",
+      "funktion": "Jugendleiter"
+    },
+    {
+      "name": "Jessica Moll",
+      "funktion": "Schriftführer"
+    },
+    {
+      "name": "Normal Schlageter",
+      "funktion": "Clubhauswart"
     }
   ],
   "chronik": [

@@ -105,7 +105,6 @@
       "kategorie": {
         ":type": "line"
       },
-
       "name": {
         ":type": "line"
       },
@@ -134,9 +133,6 @@
           "bild": {
             ":type": "image"
           }
-        },
-        "bemerkung": {
-          ":type": "line"
         }
       },
       "termine": {
