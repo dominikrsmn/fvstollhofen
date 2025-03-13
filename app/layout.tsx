@@ -26,6 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
+      <head>
+        <script
+          defer
+          src="https://umami.pushup.vision/script.js"
+          data-website-id="99a22f53-8c08-4ffa-b111-3220e4b674a4"
+        ></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
